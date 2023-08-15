@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+<head >
+	<title>Calculator</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="{% static "css/calc.css" %}">
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js"
+  			integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  			crossorigin="anonymous">
+  	</script>
+</head>
+<body >
+	<div class=" row container-lg border border-info " style="margin-top:50px;" >
+		
+			<div class=" row col-sm-5 d-flex">
+				
+				<h1 class="display-3 text-center ">Calculator</h1>
+				<p class="lead text-center ">This is a simple calculator application developed by Anand.</p>
+			<!--<hr class="my-4">-->	
+			</div>
+			<div class="col-sm-7" style="">
+				<h1><textarea id="resultArea" readonly rows="5" cols="26"></textarea></h1>
+
+				<table>
+					<tr>
+						<td></td>
+						<td></td>
+						<td><button style="height: 120px;width: 120px;" id="clrTxt" class="btn btn-danger m-5">C</button></td>
+						<td><button style="height: 120px;width: 120px;" id="del" class="btn btn-default" alt="Del">Del</button></td>
+					</tr>
+
+					<tr>
+						<td><button style="height: 80px;width: 120px;" id="num7" class="btn btn-default">7</button></td>
+						<td><button style="height: 80px;width: 120px;" id="num8" class="btn btn-default">8</button></td>
+						<td><button style="height: 80px;width: 120px;" id="num9" class="btn btn-default">9</button></td>
+						<td><button style="height: 80px;width: 120px;" id="op3" class="btn btn-default">&div;</button></td>
+					</tr>
+
+					<tr>
+						<td><button style="height: 80px;width: 120px;" id="num4" class="btn btn-default">4</button></td>
+						<td><button style="height: 80px;width: 120px;" id="num5" class="btn btn-default">5</button></td>
+						<td><button style="height: 80px;width: 120px;" id="num6" class="btn btn-default">6</button></td>
+						<td><button style="height: 80px;width: 120px;" id="op2" class="btn btn-default">&times;</button></td>
+					</tr>
+
+					<tr>
+						<td><button style="height: 80px;width: 120px;" id="num1" class="btn btn-default">1</button></td>
+						<td><button style="height: 80px;width: 120px;" id="num2" class="btn btn-default">2</button></td>
+						<td><button style="height: 80px;width: 120px;" id="num3" class="btn btn-default">3</button></td>
+						<td><button style="height: 80px;width: 120px;" id="op1" class="btn btn-default">&minus;</button></td>
+					</tr>
+
+					<tr>
+						<td><button style="height: 80px;width: 120px;"  id="decp" class="btn btn-default">.</button></td>
+						<td><button style="height: 80px;width: 120px;" id="num0" class="btn btn-default">0</button></td>
+						<td><button style="height: 80px;width: 120px;" id="eq" class="btn btn-default">=</button></td>
+						<td><button style="height: 80px;width: 120px;" id="op0" class="btn btn-default">&plus;</button></td>
+					</tr>
+				</table>
+			</div>
+	</div>	
+	<script type="text/javascript" src="{% static "js/calc.js" %}"></script>
+</body>
+</html>
